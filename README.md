@@ -74,3 +74,23 @@ Here, it will accept ANY password. Cowrie accepted any password you typed becaus
 
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Trouble Shooting I went through :
+
+1. “Connection timed out” when connecting from Windows to the honeypot to try it out : Kali VM was using NAT mode, which blocks outside devices.To fix it, I changed the VM’s network setting to Bridged Adapter. This
+   allows me to try to break in using any outside devide and not just from my local kali! you can have your friends break in using their OWN computer, and see their action logs after! 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Real Life Scenario / How Real Hackers Actually Do This:
+
+Hackers scan networks using tools like Nmap to discover which machines are online and what ports are open.
+When they find an open SSH port (usually port 22), they assume it might allow remote login.
+After identifying the target, hackers try to connect using SSH
+Hackers then perform brute-force attacks by trying thousands of username/password combinations using tools like Hydra or Medusa.
+If attackers guess the right password, they gain access and begin running commands to explore the system, steal data, or install malware.
+
+
+
+
+
